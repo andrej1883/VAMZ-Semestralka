@@ -1,0 +1,1 @@
+var packageSearchIndex = [{"l":"sk.uniza.fri.vamz","url":"sk/uniza/fri/vamz/package-summary.html"}, {"l":"sk.uniza.fri.vamz.screeny","url":"sk/uniza/fri/vamz/screeny/package-summary.html"}, {"l":"All packages","url":"index.html"}]

@@ -1,0 +1,6 @@
+$dokka.format:javadoc-v1
+$dokka.linkExtension:html
+$dokka.location:sk.uniza.fri.vamz/GameManager.GameState///PointingToDeclaration/sk/uniza/fri/vamz/GameManager.GameState.html
+sk.uniza.fri.vamz
+sk.uniza.fri.vamz.screeny
+
