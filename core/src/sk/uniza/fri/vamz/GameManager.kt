@@ -180,8 +180,6 @@ class GameManager {
         if (musicLvl > 0.05) {
             musicLvl -= 0.05f
         }
-        if(musicLvl == 0f){
-        }
     }
 
     /**
@@ -289,10 +287,10 @@ class GameManager {
             }
         }
 
-        var iter = fObjs.iterator()
+        val iter = fObjs.iterator()
         while (iter.hasNext()) {
-            var obj = iter.next();
-            obj.hranice().y -= fall * Gdx.graphics.getDeltaTime();
+            val obj = iter.next()
+            obj.hranice().y -= fall * Gdx.graphics.getDeltaTime()
             if (obj.hranice().y + 64 < 0) {
                 iter.remove()
                 catcher.playBuzz(soundMute)
@@ -313,8 +311,7 @@ class GameManager {
             if (kebabsCatched % refreshLimit == 0) {
                 resetMetrics()
                 counter++
-                refreshLimit +=2
-
+                //refreshLimit +=2
             }
         }
     }
@@ -369,8 +366,8 @@ class GameManager {
      */
     fun load() {
         try {
-            var filehandle: FileHandle = Gdx.files.external(file)
-            var string = filehandle.readString()
+            val filehandle: FileHandle = Gdx.files.external(file)
+            val string = filehandle.readString()
             Hscore = Integer.parseInt(string)
         } catch (e: Throwable) {
 
@@ -383,7 +380,8 @@ class GameManager {
      */
     fun save() {
         try {
-            var filehandle: FileHandle = Gdx.files.external(file)
+            Gdx.files.external(file).delete()
+            val filehandle: FileHandle = Gdx.files.external(file)
             filehandle.writeString(Integer.toString(Hscore), true)
         } catch (e: Throwable) {
         }

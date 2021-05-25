@@ -51,7 +51,6 @@ class MainMenuScreen(val pgame: Mazoorek) : Screen {
         exit.y = 25f
         exit.width = 100f
         exit.height = 50f
-
     }
 
     override fun show() {
